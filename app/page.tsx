@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <main className="px-6 mx-auto">
             <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
-                Thông tin mới nhất của nhà &nbsp;
+                Bài viết mới nhất của nhà &nbsp;
                 <span className="whitespace-nowrap">
                     <span className="font-bold">NEX</span>
                 </span>
