@@ -1,3 +1,4 @@
+import Image from "next/image";
 const AboutUs = () => {
     return (
         <section className="flex items-center bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
@@ -5,7 +6,7 @@ const AboutUs = () => {
             <div className="flex flex-wrap ">
                 <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
                     <div className="relative lg:max-w-md">
-                        <img src="https://i.postimg.cc/rF0MKfBV/pexels-andrea-piacquadio-3760263.jpg" alt="aboutimage"
+                        <Image src="/about-bg.jpg" width={447} height={385}  alt="aboutimage"
                             className="relative z-10 object-cover w-full rounded h-96"/>
                         <div
                             className="absolute bottom-0 right-0 z-10 p-8 bg-white border-4 border-blue-500 rounded shadow dark:border-blue-400 lg:-mb-8 lg:-mr-11 sm:p-8 dark:text-gray-300 dark:bg-gray-800 ">
