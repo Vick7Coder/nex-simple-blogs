@@ -16,7 +16,7 @@ const Home = () => {
                     <span className="font-bold">NEX</span>
                 </span>
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto">
                 {blogList}
             </div>
         </main>
