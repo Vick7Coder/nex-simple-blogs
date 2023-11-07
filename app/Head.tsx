@@ -1,9 +1,9 @@
 export default function Head() {
     return (
-      <>
-        <title>NEX's Blog</title>
+      <div>
+        <title>NEX Blog</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="icon" href="/favicon.ico" />
-      </>
+      </div>
     );
   }
