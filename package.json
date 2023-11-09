@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@uiw/react-md-editor": "^3.25.2",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.3.2",
     "next": "14.0.1",

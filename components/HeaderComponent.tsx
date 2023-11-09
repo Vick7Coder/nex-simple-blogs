@@ -15,7 +15,11 @@ const header = () => {
                 <h1 className="text-2xl font-bold grid place-content-center mb-2 md:mb-0">
                     <Link href="/" className="text-green-600 no-underline hover:text-red-600">Home</Link>
                 </h1>
+                
                 <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-4">
+                <Link className="text-green-600 hover:text-red-600 no-underline" href="/create">
+                        Create
+                    </Link>
                     <Link className="text-green-600 hover:text-red-600 no-underline" href="/about">
                         About
                     </Link>
