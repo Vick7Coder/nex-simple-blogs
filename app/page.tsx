@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import GetBlogMocks from '@/components/Service/GetBlogMocks';
 import BlogPreiew from '@/components/BlogPreview';
 
