@@ -17,6 +17,9 @@ const header = () => {
                 </h1>
                 
                 <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-4">
+                <Link className="text-green-600 hover:text-red-600 no-underline" href="/create">
+                        UpLoad
+                    </Link>
                 <Link className="text-green-600 hover:text-red-600 no-underline" href="/editor">
                         Editor
                     </Link>

@@ -9,7 +9,16 @@ const MDEditor = dynamic(() => import('@uiw/react-md-editor'), { ssr: false });
 type OnChange = (value?: string, event?: React.ChangeEvent<HTMLTextAreaElement>, state?: ContextStore) => void;
 
 export default function Home() {
-    const [value, setValue] = React.useState('**Write anything!!!**');
+
+    const sample = 
+    `---
+title: "Test"
+subtitle: "Write subtitle here."
+date: "2023-11-10"
+---
+
+##Content`;
+    const [value, setValue] = React.useState(sample);
 
     const onChange = React.useCallback<OnChange>((val) => {
         setValue(val || '');

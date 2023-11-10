@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import makeName from './Service/MakeName'
 
 export const SaveList = ({ list }: any) => {
     // set up local state for generating the download link
     const [downloadLink, setDownloadLink] = useState('')
+    const name: String = makeName(5).toString()+ '.md';
 
     // function for generating file and set download link
     const makeTextFile = () => {
@@ -25,11 +27,13 @@ export const SaveList = ({ list }: any) => {
         makeTextFile()
     }, [list])
 
+    console.log('-=-=--= name -=-=--=',typeof(name), 'sasa', name)
+
     return (
         <a
             className="w-24 inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             // this attribute sets the filename
-            download='nex-markdown-file.md'
+            download= {name}
             // link to the download URL
             href={downloadLink}
         >
